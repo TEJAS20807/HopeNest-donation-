@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HopeNest — Donation Portal</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <nav>
+        <div class="nav-left">
+            <img src="HopeNest_logo.png" alt="HopeNest Logo" class="logo-img">
+            <span class="logo-text">HopeNest</span>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+<br>
+<h2 style="text-align: center; font-family: cursive;">Hello, Changemaker ! </h2>
+      <h3 style="text-align: center; font-family:Verdana;">Ready to make an impact? Browse through 10,000+ fundraisers and donate to make a difference</h3>
+
+  <main class="container">
+    <section class="form-section">
+      <h2>Donate — Donor Details</h2>
+      <p>Please fill your details below.</p>
+
+      <form class="donation-form" method="get" action="submit.html">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required>
+
+        <label for="amount">Donation Amount (INR)</label>
+        <input type="number" id="amount" name="amount" min="1" placeholder="Enter amount" required>
+
+        <label for="method">Mode of Donation</label>
+        <select id="method" name="method">
+          <option>UPI</option>
+          <option>Bank Transfer</option>
+          <option>Cash</option>
+        </select>
+
+        <label for="message">Message (optional)</label>
+        <textarea id="message" name="message" rows="4" placeholder="A short message or note"></textarea>
+
+        <button type="submit" class="btn">Submit Donation</button>
+      </form>
+    </section>
+  </main>
+
+ <footer class="footer">
+  <div class="footer-content">
+    <div class="footer-logo">
+      <img src="HopeNest_logo.png" alt="HopeNest Logo">
+      <span>HopeNest Donation Portal</span>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="donate.html">Donate</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-contact">
+      <p>Email: info@hopenest.org</p>
+      <p>Phone: +91 1100100100</p>
+    </div>
+    <div class="footer-social">
+      <a href="#"><img src="facebook.jpg" alt="Facebook"></a>
+      <a href="#"><img src="insta.jpg" alt="Instagram"></a>
+      <a href="#"><img src="twitter.jpg" alt="Twitter"></a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2025 HopeNest Donation Portal. All rights reserved.</span>
+  </div>
+</footer>
+</body>
+</html>

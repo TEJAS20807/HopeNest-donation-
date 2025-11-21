@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Submission Successful — HopeNest</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="nav-left">
+      <img src="HopeNest_logo.png" alt="HopeNest Logo" class="logo-img">
+      <span class="logo-text">HopeNest</span>
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="donate.html">Donate</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Content area to be filled by JS -->
+  <div id="submission-wrapper"></div>
+  
+  <script>
+    // JS creates and fills submission message section
+    const wrapper = document.getElementById('submission-wrapper');
+    wrapper.innerHTML = `
+      <div class="submit-message-section" style="max-width:480px;margin:55px auto 55px auto;padding:26px 20px 30px 20px;background:#fff;border-radius:14px;box-shadow:0 4px 26px rgba(44,73,60,0.12);text-align:center;">
+        <h2 style="color:#4a5759;margin-bottom:12px;font-size:2rem;">Thank you!</h2>
+        <p style="color:#444;font-size:1.12rem;margin-bottom:18px;">
+          Your message was submitted successfully.<br>
+          We appreciate your feedback and will get back to you soon.
+        </p>
+        <button class="home-link" id="goHomeBtn" style="color:#4a5759;background:#dedbd2;padding:10px 24px;border:none;border-radius:7px;font-size:1.08rem;cursor:pointer;margin-top:10px;font-weight:600;">Go to Home</button>
+      </div>
+    `;
+    document.getElementById('goHomeBtn').onclick = function() {
+      window.location.href = "index.html";
+    };
+  </script>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="HopeNest_logo.png" alt="HopeNest Logo">
+        <span>HopeNest Donation Portal</span>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="donate.html">Donate</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-contact">
+        <p>Email: info@hopenest.org</p>
+        <p>Phone: +91 1100100100</p>
+      </div>
+      <div class="footer-social">
+        <a href="#"><img src="facebook.jpg" alt="Facebook"></a>
+        <a href="#"><img src="insta.jpg" alt="Instagram"></a>
+        <a href="#"><img src="twitter.jpg" alt="Twitter"></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 HopeNest Donation Portal. All rights reserved.</span>
+    </div>
+  </footer>
+</body>
+</html>
